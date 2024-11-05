@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Thêm Sản Phẩm</h2>
+    <form id="productForm">
+        <label for="productName">Tên sản phẩm:</label>
+        <input type="text" id="productName" name="productName" required><br>
+
+        <label for="price">Giá:</label>
+        <input type="number" id="price" name="price" step="0.01" required><br>
+
+        <label for="description">Mô tả:</label>
+        <textarea id="description" name="description" rows="4"></textarea><br>
+
+        <label for="stockQuantity">Số lượng tồn kho:</label>
+        <input type="number" id="stockQuantity" name="stockQuantity" min="0" required><br>
+
+        <button type="submit">Thêm sản phẩm</button>
+    </form>
+</body>
+</html>
